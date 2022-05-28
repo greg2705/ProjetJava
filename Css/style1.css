@@ -1,0 +1,39 @@
+#panneau {
+    -fx-border-color: black;
+    -fx-border-width: 5 ;
+}
+.bleu {
+    -fx-fill: Blue;
+    -fx-background-color: Blue;
+}
+.blanc{
+    -fx-fill: Gray;
+
+
+}
+.rouge{
+    -fx-fill: Red;
+    -fx-background-color: Red;
+
+}
+.violet{
+    -fx-fill: Purple;
+    -fx-background-color: Purple;
+
+}
+.nord {
+    -fx-fill: Red;
+    -fx-background-color: Red;
+}
+.sud{
+    -fx-fill: Red;
+    -fx-background-color: Red;
+}
+.est{
+    -fx-fill: Blue;
+    -fx-background-color: Blue;
+}
+.ouest{
+    -fx-fill: Blue;
+    -fx-background-color: Blue;
+}
