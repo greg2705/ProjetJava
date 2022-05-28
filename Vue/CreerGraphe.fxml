@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" gridLinesVisible="true" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="745.0" stylesheets="@../Css/style1.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" prefWidth="262.0000356038411" />
+    <ColumnConstraints hgrow="SOMETIMES" prefWidth="472.66663106282556" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="addNode" alignment="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="110.0" text="Ajouter Noeud" />
+                  <TextField fx:id="etiq" alignment="CENTER" maxWidth="150.0" prefHeight="32.0" prefWidth="100.0" promptText="Etiquette Noeud" />
+               </children>
+            </HBox>
+            <ToggleButton fx:id="addArrete" mnemonicParsing="false" prefHeight="32.0" prefWidth="143.0" text="Ajouter arrete">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </ToggleButton>
+            <ToggleButton fx:id="delBtn" mnemonicParsing="false" prefHeight="33.0" prefWidth="140.0" text="Supprimer Arrete/Noeud">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </ToggleButton>
+            <Button fx:id="matAdja" mnemonicParsing="false" prefHeight="31.0" prefWidth="142.0" text="Rentrer Matrice Adja">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin></Button>
+            <Button fx:id="rtnMenuPrncpBtn" mnemonicParsing="false" prefHeight="32.0" prefWidth="142.0" text="Retour Menu Principal">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin></Button>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="saveBtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: red;" text="Créer et Enregistrer Graphe">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="nameField" prefHeight="32.0" prefWidth="106.0" promptText="nom du graphe" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane fx:id="panneau" prefHeight="500.0" prefWidth="500.0" GridPane.columnIndex="1" />
+   </children>
+</GridPane>
