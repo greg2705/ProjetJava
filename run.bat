@@ -1,0 +1,3 @@
+javac --module-path %CD%\Lib\wind --add-modules=javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media -classpath "%CD%\;%CD%\Lib\wind;.\Lib\gson.jar;.\Lib\javafx-swt.jar;.\Lib\javafx.web.jar;.\Lib\javafx.base.jar;.\Lib\javafx.fxml.jar;.\Lib\javafx.media.jar;.\Lib\javafx.swing.jar;.\Lib\javafx.controls.jar;\Lib\javafx.graphics.jar" Main.java Jeux\*.java
+java --module-path %CD%\Lib\wind --add-modules=javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media -classpath "%CD%\;.\Lib\gson.jar;.\Lib\javafx-swt.jar;.\Lib\javafx.web.jar;.\Lib\javafx.base.jar;.\Lib\javafx.fxml.jar;.\Lib\javafx.media.jar;.\Lib\javafx.swing.jar;.\Lib\javafx.controls.jar;\Lib\javafx.graphics.jar"  Main
+PAUSE
